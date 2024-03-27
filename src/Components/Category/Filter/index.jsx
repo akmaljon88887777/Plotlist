@@ -35,7 +35,7 @@ function Category() {
       className="items-center w-full xl:pb-10 md:grid md:px-10"
       style={{}}
     >
-      <div className=" md:gap-10 xl:flex xl:mt-10 grid lg:w-[100%] items-start m-auto xl:w-[86%]  gap-10 lg:flex md:grid md:w-[100%] ">
+      <div className=" md:gap-10 xl:flex bg-[#2B2D42] rounded p-8 xl:mt-10 grid lg:w-[100%] items-start m-auto xl:w-[86%]  gap-10 lg:flex md:grid md:w-[100%] ">
         <div className="text-xl font-extrabold lg:w-[30%] w-[96%] m-auto grid gap-10 xl:w-[34%] md:w-[100%]">
           <div
             style={{ borderRadius: "5.5px", height: "116px" }}
