@@ -4,6 +4,7 @@ import Rasm2 from "./search-icon-02.png";
 import Rasm3 from "./search-icon-03.png";
 import Rasm4 from "./search-icon-04.png";
 import Rasm5 from "./search-icon-05.png";
+import "./style.css";
 function Header() {
   return (
     <div className="flex flex-col w-full justify-center items-center z-1">
@@ -66,7 +67,7 @@ function Header() {
         </div>
       </div>
       <br />
-      <div className="grid md:mt-[790px] xl:mt-96 md:gap-5 lg:mt-0 lg:grid-cols-5 grid-cols-2 xl:gap-[40%] z-10 absolute mt-[900px] justify-center">
+      <div className="grid minus md:mt-[790px] xl:mt-96 md:gap-5 lg:mt-0 lg:grid-cols-5 grid-cols-2 xl:gap-[40%] z-10 absolute mt-[900px] justify-center">
         <div className="grid justify-items-center">
           <div className="w-[66px] h-[66px] bg-white rounded-full cursor-pointer flex justify-center items-center">
             <img src={Rasm} alt="" />
