@@ -5,6 +5,7 @@ import Rasm3 from "./search-icon-03.png";
 import Rasm4 from "./search-icon-04.png";
 import Rasm5 from "./search-icon-05.png";
 import "./style.css";
+const food = ["Food & Life"];
 function Header() {
   return (
     <div className="flex flex-col w-full justify-center items-center z-1">
@@ -18,12 +19,13 @@ function Header() {
           </h4>
         </div>
         <br />
+        <br />
         <div>
-          <div className="flex justify-center">
-            <div className="w-[84%] lg:h-[70px] h-[400px] rounded bg-[#fff] absolute lg:grid lg:grid-cols-4 grid-cols-1 md:grid grid lg:flex-row justify-items-center items-center">
-              <div className="border-r border-gray-400 px-5">
+          <div className="flex justify-center w-full">
+            <div className="w-[84%] lg:h-[70px] lg:w-[90%] lg:-ml-[5%] xl:ml-0 h-[400px] rounded bg-[#fff] absolute lg:grid lg:grid-cols-4 grid-cols-1 md:grid grid lg:flex-row justify-items-center items-center">
+              <div className="border-r border-gray-400 px-5 lg:pl-32">
                 <select
-                  className="xl:w-[298px] lg:w-[290px] md:w-[280px] w-[200px] h-[36px] outline-none"
+                  className="xl:w-[270px] xl:-ml-32 lg:w-[290px] md:w-[280px] w-[200px] h-[36px] outline-none"
                   name=""
                   id=""
                 >
@@ -39,7 +41,7 @@ function Header() {
                   name="address"
                   placeholder="Enter a location"
                   autocomplete="on"
-                  className="xl:w-[298px] lg:w-[290px] md:w-[280px] w-[200px] h-[36px] outline-none"
+                  className="xl:w-[298px] lg:w-[290px] md:w-[280px] w-[200px] h-[36px] outline-none pl-5"
                 />
               </div>
               <div className="px-6">
@@ -56,7 +58,7 @@ function Header() {
                 </select>
               </div>
               <button
-                className="xl:w-[298px] lg:w-[290px] md:w-[280px] w-[200px] h-[70px] bg-[#8d99af] flex justify-center items-center gap-5 text-white rounded-e"
+                className="xl:w-[298px]  xl:ml-[43px] lg:ml-8 lg:w-[290px] md:w-[280px] w-[200px] h-[70px] bg-[#8d99af] flex justify-center items-center gap-5 text-white rounded-e"
                 type="submit"
               >
                 <i className="fa fa-search w-10 h-10 rounded-full bg-[#FFFFFF] text-[#8d99af] flex items-center justify-center"></i>
@@ -67,36 +69,46 @@ function Header() {
         </div>
       </div>
       <br />
-      <div className="grid minus md:mt-[790px] xl:mt-96 md:gap-5 lg:mt-0 lg:grid-cols-5 grid-cols-2 xl:gap-[40%] z-10 absolute mt-[900px] justify-center">
+      <div className="grid minus md:mt-[790px] xl:-ml-[5%] xl:mt-[420px] md:gap-5 lg:mt-[40%] lg:grid-cols-5 grid-cols-2 xl:gap-[45%] z-10 absolute mt-[900px] justify-center">
         <div className="grid justify-items-center">
-          <div className="w-[66px] h-[66px] bg-white rounded-full cursor-pointer flex justify-center items-center">
+          <div className="w-[66px] h-[66px] hover:bg-[#2B2D42] bg-white rounded-full cursor-pointer flex justify-center items-center">
             <img src={Rasm} alt="" />
           </div>
-          Appertments
+          <p className="hidden text-[15px] justify-center md:flex lg:flex xl:flex text-[#fff] w-full">
+            Appertments
+          </p>
         </div>
         <div className="grid justify-items-center">
-          <div className="w-[66px] h-[66px] bg-white rounded-full cursor-pointer flex justify-center items-center">
+          <div className="w-[66px] h-[66px] hover:bg-[#2B2D42] bg-white rounded-full cursor-pointer flex justify-center items-center">
             <img src={Rasm2} alt="" />
           </div>
-          Food & Life
+          <p className="hidden text-[15px] justify-center md:flex lg:flex xl:flex text-[#fff] w-full">
+            {food}
+          </p>
         </div>
         <div className="grid justify-items-center">
-          <div className="w-[66px] h-[66px] bg-white rounded-full cursor-pointer flex justify-center items-center">
+          <div className="w-[66px] h-[66px] hover:bg-[#2B2D42] bg-white rounded-full cursor-pointer flex justify-center items-center">
             <img src={Rasm3} alt="" />
           </div>
-          Cars
+          <p className="hidden text-[15px] justify-center md:flex lg:flex xl:flex text-[#fff] w-full">
+            Cars
+          </p>
         </div>
         <div className="grid justify-items-center">
-          <div className="w-[66px] h-[66px] bg-white rounded-full cursor-pointer flex justify-center items-center">
+          <div className="w-[66px] h-[66px] hover:bg-[#2B2D42] bg-white rounded-full cursor-pointer flex justify-center items-center">
             <img src={Rasm4} alt="" />
           </div>
-          Shopping
+          <p className="hidden text-[15px] justify-center md:flex lg:flex xl:flex text-[#fff] w-full">
+            Shopping
+          </p>
         </div>
         <div className="grid justify-items-center">
-          <div className="w-[66px] h-[66px] bg-white rounded-full cursor-pointer flex justify-center items-center">
+          <div className="w-[66px] h-[66px] hover:bg-[#2B2D42] bg-white rounded-full cursor-pointer flex justify-center items-center">
             <img src={Rasm5} alt="" />
           </div>
-          Traveling
+          <p className="hidden text-[15px] justify-center md:flex lg:flex xl:flex text-[#fff] w-full">
+            Traveling
+          </p>
         </div>
       </div>
     </div>

@@ -10,8 +10,8 @@ export default function App() {
   return (
     <div>
       <Loading />
-      <div>
-        <div className="img h-[100vh] flex flex-col items-start overflow-x-hidden">
+      <div className="overflow-hidden">
+        <div className="img h-[100vh] flex flex-col items-start ">
           <Navbar />
           <Header />
         </div>

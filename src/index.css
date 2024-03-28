@@ -4,9 +4,10 @@
 
 body {
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #fff !important;
   color: #222;
 }
 
@@ -32,6 +33,16 @@ code {
   .img {
     height: 1100px !important;
     margin-bottom: 10%;
+  }
+  .nav {
+    background-color: #fff;
+  }
+  .btn {
+    margin-bottom: 20px;
+  }
+  .minus {
+    display: grid;
+    gap: 25% !important;
   }
 }
 .navbar_fixed {

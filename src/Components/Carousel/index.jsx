@@ -15,8 +15,8 @@ import "swiper/css";
 import "swiper/css/pagination";
 export default function Carousel() {
   return (
-    <div>
-      <div className="flex justify-center text-center my-32 flex-col">
+    <div className="mb-10">
+      <div className="flex justify-center text-center my-20 flex-col">
         <h4 className="text-[35px] font-bold">Recent listing</h4>
         <br />
         <p className="text-[16px] font-semibold text-[#8d99af]">
@@ -35,11 +35,15 @@ export default function Carousel() {
           navigation={true}
           modules={[Autoplay, Pagination, Navigation]}
           className="mySwiper"
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
+          }}
         >
           <Swiper>
-            <SwiperSlide>
+            <SwiperSlide className="">
               <div className="grid grid-cols-1 gap-[5%]">
-                <div className="lg:flex grid">
+                <div className="lg:flex grid bg-[#F7F7F7]">
                   <div className="w-full">
                     <img className="w-full" src={Rasm} alt="" />
                   </div>
@@ -63,11 +67,11 @@ export default function Carousel() {
                       by: Sale Agent
                     </p>
                     <br />
-                    <div className="flex text-start justify-start">
+                    <div className="flex text-start items-center justify-start gap-3">
                       <div className="w-[30px] flex justify-center items-center h-[30px] rounded-full bg-[#8d99af]">
                         <CgPlayListRemove />
                       </div>
-                      <p>$3600 / month with taxes</p>
+                      <p className="text-[15px]">$3600 / month with taxes</p>
                     </div>
                     <br />
                     <p className="text-[15px]">
@@ -85,16 +89,20 @@ export default function Carousel() {
                         </p>
                       </div>
                       <div>
-                        <button className="w-[186px] h-[48px] rounded flex justify-center items-center bg-red-700">
+                        <button className="w-[186px] h-[48px] rounded flex justify-center items-center bg-white">
                           Contact Now
                         </button>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="lg:flex grid">
+                <div className="lg:flex grid bg-[#F7F7F7]">
                   <div className="w-full">
-                    <img className="w-full" src={Rasm} alt="" />
+                    <img
+                      className="w-full"
+                      src="https://templatemo.com/templates/templatemo_564_plot_listing/assets/images/listing-02.jpg"
+                      alt=""
+                    />
                   </div>
                   <div className="w-full text-start p-[6%] pb-[4%]">
                     <div className="flex justify-between items-center">
@@ -116,11 +124,11 @@ export default function Carousel() {
                       by: Sale Agent
                     </p>
                     <br />
-                    <div className="lg:flex grid text-start justify-start">
+                    <div className="flex text-start items-center justify-start gap-3">
                       <div className="w-[30px] flex justify-center items-center h-[30px] rounded-full bg-[#8d99af]">
                         <CgPlayListRemove />
                       </div>
-                      <p>$3600 / month with taxes</p>
+                      <p className="text-[15px]">$3600 / month with taxes</p>
                     </div>
                     <br />
                     <p className="text-[15px]">
@@ -131,23 +139,26 @@ export default function Carousel() {
                       <div>
                         <p className="flex text-[16px] items-center gap-3">
                           <FaBed size={20} /> 4 Bedrooms
-                          {/* 	https://templatemo.com/templates/templatemo_564_plot_listing/assets/images/listing-icon-03.png */}
                         </p>
                         <p className="flex text-[16px] items-center gap-3">
                           <TbBathFilled size={20} />3 Bathrooms
                         </p>
                       </div>
                       <div>
-                        <button className="w-[186px] h-[48px] rounded flex justify-center items-center bg-red-700">
+                        <button className="w-[186px] h-[48px] rounded flex justify-center items-center bg-white">
                           Contact Now
                         </button>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="lg:flex grid">
+                <div className="lg:flex grid bg-[#F7F7F7]">
                   <div className="w-full">
-                    <img className="w-full" src={Rasm} alt="" />
+                    <img
+                      className="w-full"
+                      src="https://templatemo.com/templates/templatemo_564_plot_listing/assets/images/listing-06.jpg"
+                      alt=""
+                    />
                   </div>
                   <div className="w-full text-start p-[6%] pb-[4%]">
                     <div className="flex justify-between items-center">
@@ -169,11 +180,11 @@ export default function Carousel() {
                       by: Sale Agent
                     </p>
                     <br />
-                    <div className="flex text-start justify-start">
+                    <div className="flex text-start items-center justify-start gap-3">
                       <div className="w-[30px] flex justify-center items-center h-[30px] rounded-full bg-[#8d99af]">
                         <CgPlayListRemove />
                       </div>
-                      <p>$3600 / month with taxes</p>
+                      <p className="text-[15px]">$3600 / month with taxes</p>
                     </div>
                     <br />
                     <p className="text-[15px]">
@@ -184,14 +195,13 @@ export default function Carousel() {
                       <div>
                         <p className="flex text-[16px] items-center gap-3">
                           <FaBed size={20} /> 4 Bedrooms
-                          {/* 	https://templatemo.com/templates/templatemo_564_plot_listing/assets/images/listing-icon-03.png */}
                         </p>
                         <p className="flex text-[16px] items-center gap-3">
                           <TbBathFilled size={20} />3 Bathrooms
                         </p>
                       </div>
                       <div>
-                        <button className="w-[186px] h-[48px] rounded flex justify-center items-center bg-red-700">
+                        <button className="w-[186px] h-[48px] rounded flex justify-center items-center bg-white">
                           Contact Now
                         </button>
                       </div>
@@ -202,9 +212,13 @@ export default function Carousel() {
             </SwiperSlide>
             <SwiperSlide>
               <div className="grid grid-cols-1 gap-[5%]">
-                <div className="lg:flex grid">
+                <div className="lg:flex grid bg-[#F7F7F7]">
                   <div className="w-full">
-                    <img className="w-full" src={Rasm} alt="" />
+                    <img
+                      className="w-full"
+                      src="https://templatemo.com/templates/templatemo_564_plot_listing/assets/images/listing-04.jpg"
+                      alt=""
+                    />
                   </div>
                   <div className="w-full text-start p-[6%] pb-[4%]">
                     <div className="flex justify-between items-center">
@@ -226,11 +240,11 @@ export default function Carousel() {
                       by: Sale Agent
                     </p>
                     <br />
-                    <div className="flex text-start justify-start">
+                    <div className="flex text-start items-center justify-start gap-3">
                       <div className="w-[30px] flex justify-center items-center h-[30px] rounded-full bg-[#8d99af]">
                         <CgPlayListRemove />
                       </div>
-                      <p>$3600 / month with taxes</p>
+                      <p className="text-[15px]">$3600 / month with taxes</p>
                     </div>
                     <br />
                     <p className="text-[15px]">
@@ -241,23 +255,26 @@ export default function Carousel() {
                       <div>
                         <p className="flex text-[16px] items-center gap-3">
                           <FaBed size={20} /> 4 Bedrooms
-                          {/* 	https://templatemo.com/templates/templatemo_564_plot_listing/assets/images/listing-icon-03.png */}
                         </p>
                         <p className="flex text-[16px] items-center gap-3">
                           <TbBathFilled size={20} />3 Bathrooms
                         </p>
                       </div>
                       <div>
-                        <button className="w-[186px] h-[48px] rounded flex justify-center items-center bg-red-700">
+                        <button className="w-[186px] h-[48px] rounded flex justify-center items-center bg-white">
                           Contact Now
                         </button>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="lg:flex grid">
+                <div className="lg:flex grid bg-[#F7F7F7]">
                   <div className="w-full">
-                    <img className="w-full" src={Rasm} alt="" />
+                    <img
+                      className="w-full"
+                      src="https://templatemo.com/templates/templatemo_564_plot_listing/assets/images/listing-05.jpg"
+                      alt=""
+                    />
                   </div>
                   <div className="w-full text-start p-[6%] pb-[4%]">
                     <div className="flex justify-between items-center">
@@ -279,11 +296,11 @@ export default function Carousel() {
                       by: Sale Agent
                     </p>
                     <br />
-                    <div className="lg:flex grid text-start justify-start">
+                    <div className="flex text-start items-center justify-start gap-3">
                       <div className="w-[30px] flex justify-center items-center h-[30px] rounded-full bg-[#8d99af]">
                         <CgPlayListRemove />
                       </div>
-                      <p>$3600 / month with taxes</p>
+                      <p className="text-[15px]">$3600 / month with taxes</p>
                     </div>
                     <br />
                     <p className="text-[15px]">
@@ -301,16 +318,20 @@ export default function Carousel() {
                         </p>
                       </div>
                       <div>
-                        <button className="w-[186px] h-[48px] rounded flex justify-center items-center bg-red-700">
+                        <button className="w-[186px] h-[48px] rounded flex justify-center items-center bg-white">
                           Contact Now
                         </button>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="lg:flex grid">
+                <div className="lg:flex grid bg-[#F7F7F7]">
                   <div className="w-full">
-                    <img className="w-full" src={Rasm} alt="" />
+                    <img
+                      className="w-full"
+                      src="https://templatemo.com/templates/templatemo_564_plot_listing/assets/images/listing-06.jpg"
+                      alt=""
+                    />
                   </div>
                   <div className="w-full text-start p-[6%] pb-[4%]">
                     <div className="flex justify-between items-center">
@@ -332,11 +353,11 @@ export default function Carousel() {
                       by: Sale Agent
                     </p>
                     <br />
-                    <div className="flex text-start justify-start">
+                    <div className="flex text-start items-center justify-start gap-3">
                       <div className="w-[30px] flex justify-center items-center h-[30px] rounded-full bg-[#8d99af]">
                         <CgPlayListRemove />
                       </div>
-                      <p>$3600 / month with taxes</p>
+                      <p className="text-[15px]">$3600 / month with taxes</p>
                     </div>
                     <br />
                     <p className="text-[15px]">
@@ -347,14 +368,13 @@ export default function Carousel() {
                       <div>
                         <p className="flex text-[16px] items-center gap-3">
                           <FaBed size={20} /> 4 Bedrooms
-                          {/* 	https://templatemo.com/templates/templatemo_564_plot_listing/assets/images/listing-icon-03.png */}
                         </p>
                         <p className="flex text-[16px] items-center gap-3">
                           <TbBathFilled size={20} />3 Bathrooms
                         </p>
                       </div>
                       <div>
-                        <button className="w-[186px] h-[48px] rounded flex justify-center items-center bg-red-700">
+                        <button className="w-[186px] h-[48px] rounded flex justify-center items-center bg-white">
                           Contact Now
                         </button>
                       </div>
@@ -365,9 +385,13 @@ export default function Carousel() {
             </SwiperSlide>
             <SwiperSlide>
               <div className="grid grid-cols-1 gap-[5%]">
-                <div className="lg:flex grid">
+                <div className="lg:flex grid bg-[#F7F7F7] rounded">
                   <div className="w-full">
-                    <img className="w-full" src={Rasm} alt="" />
+                    <img
+                      className="w-full"
+                      src="https://templatemo.com/templates/templatemo_564_plot_listing/assets/images/listing-05.jpg"
+                      alt=""
+                    />
                   </div>
                   <div className="w-full text-start p-[6%] pb-[4%]">
                     <div className="flex justify-between items-center">
@@ -389,11 +413,11 @@ export default function Carousel() {
                       by: Sale Agent
                     </p>
                     <br />
-                    <div className="flex text-start justify-start">
+                    <div className="flex text-start items-center justify-start gap-3">
                       <div className="w-[30px] flex justify-center items-center h-[30px] rounded-full bg-[#8d99af]">
                         <CgPlayListRemove />
                       </div>
-                      <p>$3600 / month with taxes</p>
+                      <p className="text-[15px]">$3600 / month with taxes</p>
                     </div>
                     <br />
                     <p className="text-[15px]">
@@ -411,16 +435,20 @@ export default function Carousel() {
                         </p>
                       </div>
                       <div>
-                        <button className="w-[186px] h-[48px] rounded flex justify-center items-center bg-red-700">
+                        <button className="w-[186px] h-[48px] rounded flex justify-center items-center bg-white">
                           Contact Now
                         </button>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="lg:flex grid">
+                <div className="lg:flex grid bg-[#F7F7F7] rounded">
                   <div className="w-full">
-                    <img className="w-full" src={Rasm} alt="" />
+                    <img
+                      className="w-full"
+                      src="https://templatemo.com/templates/templatemo_564_plot_listing/assets/images/listing-02.jpg"
+                      alt=""
+                    />
                   </div>
                   <div className="w-full text-start p-[6%] pb-[4%]">
                     <div className="flex justify-between items-center">
@@ -442,11 +470,11 @@ export default function Carousel() {
                       by: Sale Agent
                     </p>
                     <br />
-                    <div className="lg:flex grid text-start justify-start">
+                    <div className="flex text-start items-center justify-start gap-3">
                       <div className="w-[30px] flex justify-center items-center h-[30px] rounded-full bg-[#8d99af]">
                         <CgPlayListRemove />
                       </div>
-                      <p>$3600 / month with taxes</p>
+                      <p className="text-[15px]">$3600 / month with taxes</p>
                     </div>
                     <br />
                     <p className="text-[15px]">
@@ -457,23 +485,26 @@ export default function Carousel() {
                       <div>
                         <p className="flex text-[16px] items-center gap-3">
                           <FaBed size={20} /> 4 Bedrooms
-                          {/* 	https://templatemo.com/templates/templatemo_564_plot_listing/assets/images/listing-icon-03.png */}
                         </p>
                         <p className="flex text-[16px] items-center gap-3">
                           <TbBathFilled size={20} />3 Bathrooms
                         </p>
                       </div>
                       <div>
-                        <button className="w-[186px] h-[48px] rounded flex justify-center items-center bg-red-700">
+                        <button className="w-[186px] h-[48px] rounded flex justify-center items-center bg-white">
                           Contact Now
                         </button>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="lg:flex grid">
+                <div className="lg:flex grid bg-[#F7F7F7] rounded">
                   <div className="w-full">
-                    <img className="w-full" src={Rasm} alt="" />
+                    <img
+                      className="w-full"
+                      src="https://templatemo.com/templates/templatemo_564_plot_listing/assets/images/listing-06.jpg"
+                      alt=""
+                    />
                   </div>
                   <div className="w-full text-start p-[6%] pb-[4%]">
                     <div className="flex justify-between items-center">
@@ -495,11 +526,11 @@ export default function Carousel() {
                       by: Sale Agent
                     </p>
                     <br />
-                    <div className="flex text-start justify-start">
+                    <div className="flex text-start justify-start gap-3">
                       <div className="w-[30px] flex justify-center items-center h-[30px] rounded-full bg-[#8d99af]">
                         <CgPlayListRemove />
                       </div>
-                      <p>$3600 / month with taxes</p>
+                      <p className="text-[15px]">$3600 / month with taxes</p>
                     </div>
                     <br />
                     <p className="text-[15px]">
@@ -517,7 +548,7 @@ export default function Carousel() {
                         </p>
                       </div>
                       <div>
-                        <button className="w-[186px] h-[48px] rounded flex justify-center items-center bg-red-700">
+                        <button className="w-[186px] h-[48px] rounded flex justify-center items-center bg-white">
                           Contact Now
                         </button>
                       </div>

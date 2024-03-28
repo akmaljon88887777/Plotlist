@@ -39,7 +39,7 @@ function Navbar() {
         className={`${
           demo
             ? "shadow-xl p-5 bg-[#fff] top-0 fixed w-full border-b"
-            : " top-0 fixed bg-transparent w-full p-5"
+            : " top-0 fixed bg-transparent w-full p-5 nav border-b border-[#868C9C]"
         }`}
       >
         <div className="flex justify-between lg:w-[86%] w-[95%] m-auto items-center">
@@ -82,7 +82,7 @@ function Navbar() {
             </div>
           </div>
 
-          <div className=" items-center lg:gap-14 md:gap-5 md:flex hidden">
+          <div className="md:ml-7 items-center lg:gap-14 md:gap-5 md:flex hidden">
             <NavLink
               className={({ isActive, isPending }) =>
                 isPending
@@ -127,9 +127,25 @@ function Navbar() {
             >
               <span>Contact Us</span>
             </NavLink>
-            <button className="bg-[#8D99AF] w-[208px] h-[40px] justify-center gap-[12px] items-center rounded-[9px] text-white flex">
-              <MdAddCircle color="#000" size={24} /> Add Your Listing
-            </button>
+            {demo ? (
+              <button className="bg-[#222] w-[208px] h-[40px] justify-center gap-[12px] items-center rounded-[9px] text-[#fff] flex">
+                {demo ? (
+                  <MdAddCircle color="#fff" size={24} />
+                ) : (
+                  <MdAddCircle color="#000" size={24} />
+                )}{" "}
+                Add Your Listing
+              </button>
+            ) : (
+              <button className="bg-[#fff] w-[208px] h-[40px] justify-center gap-[12px] items-center rounded-[9px] text-[#222] flex">
+                {demo ? (
+                  <MdAddCircle color="#fff" size={24} />
+                ) : (
+                  <MdAddCircle color="#000" size={24} />
+                )}
+                Add Your Listing
+              </button>
+            )}
           </div>
         </div>
       </div>

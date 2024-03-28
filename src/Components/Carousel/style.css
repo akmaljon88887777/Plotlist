@@ -18,8 +18,13 @@ body {
   height: 190vh !important;
   z-index: 1 !important;
   padding: 2%;
-  border: 1px solid;
   padding-bottom: 4%;
+  border-radius: 6px !important;
+}
+@media screen and (max-width: 1025px) {
+  .swiper {
+    height: 210vh !important;
+  }
 }
 .swiper-pagination-bullets {
   z-index: 9999 !important;
